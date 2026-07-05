@@ -66,7 +66,7 @@ export function Contact({ config }: ContactProps) {
         reset();
       } else {
         toast.error('Failed to send message', {
-          description: 'Please try again later.',
+          description: result.error ?? 'Please try again later.',
         });
       }
     } catch {
@@ -77,7 +77,7 @@ export function Contact({ config }: ContactProps) {
   };
 
   return (
-    <SectionWrapper id="contact" className="pb-16">
+    <SectionWrapper id="contact" className="border-t border-border/70 pb-16">
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
         <div>
           <div className="section-eyebrow mb-4">

@@ -28,6 +28,7 @@
     { "id": "skills", "type": "skills", "config": { "title": "Technical Expertise" } },
     { "id": "experience", "type": "experience", "config": { "title": "Experience" } },
     { "id": "projects", "type": "projects", "config": { "title": "Featured Projects" } },
+    { "id": "testimonials", "type": "testimonials", "config": { "title": "This is what my colleagues say about me 💙" } },
     { "id": "contact", "type": "contact", "config": { "title": "Get in Touch" } }
   ],
   "skills": [
@@ -71,12 +72,12 @@
       "company": "Sumeru Software Solutions",
       "location": "Bengaluru, IN",
       "period": "Dec 2024 - Present",
-      "description": "Led a 15-member team to build and scale a global back-office app used by 15,000+ teachers and admins across 60+ countries.",
+      "description": "Led a 15-member team to build and scale a global back-office app used by 15,000+ teachers and admins across 90+ countries.",
       "achievements": [
         "Focused on architecture, feature delivery, and performance optimization using Next.js (Refine), Shadcn UI, Zustand, NestJS, message queues, and microservices.",
         "Developed configurable course registration pages enabling dynamic content and flow customization, supporting 100,000+ participant registrations.",
         "Built a reusable payment gateway integration module used by multiple Art of Living projects.",
-        "Built an internal translation management system using Supabase and JS for 60+ countries and 50+ languages, reducing localization turnaround time.",
+        "Built an internal translation management system using Supabase and JS for 90+ countries and 60+ languages, reducing localization turnaround time.",
         "Built a unified fundraising wrapper that dynamically integrates multiple campaigns using configurable data.",
         "Collaborated in the rapid development of the Art of Living US website, delivering optimized Next.js components within 48 hours."
       ]
@@ -87,10 +88,13 @@
       "company": "Sumeru Software Solutions",
       "location": "Bengaluru, IN",
       "period": "Jan 2024 - Dec 2024",
-      "description": "Worked on the front-end of the Art of Living Latin America Backoffice application.",
+      "description": "Built front-end features and developer tooling for Art of Living Digital on Pathfinder, a global CRM platform, and admin back-office applications.",
       "achievements": [
-        "Translated 600+ Figma screens into production using ReactJS.",
-        "Developed 15+ custom UI components that improved usability and ensured consistent UI/UX for over 5,000 active admin users."
+        "Built production React UI for the Latin America back-office, translating 600+ Figma screens into reusable components.",
+        "Shipped 15+ reusable UI components that improved usability and consistent UI/UX for 5,000+ active admin users.",
+        "Built German Ashram Pickup Scheduler from a React web app to a React Native mobile app with real-time WebSocket updates and offline support.",
+        "Built Snapdrop, a Slack bot with Python scripts for automated database snapshots via SSH tunnels, adopted by all development teams.",
+        "Set up CI/CD pipelines with SonarQube and co-created a cross-service translations system serving 150+ locales."
       ]
     }
   ],
@@ -124,6 +128,32 @@
       "github": "https://github.com/ajaydarisi/Textile-Inventory-Manager",
       "link": "https://textile-inventory-app.vercel.app/",
       "description": "A Tally-like accounting and inventory management system for textile wholesalers. Features journal-based double-entry accounting with strict debit-credit validation, stock tracking via movement events, voucher management (purchase, sales, receipt, payment), and financial reports including trial balance and profit/loss. Uses PostgreSQL functions for accounting logic and Row Level Security for company-level data isolation."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "quote": "During his tenure as a full-time developer, Suresh consistently demonstrated strong technical acumen and a proactive approach to problem-solving. He thoroughly researches and understands complex tasks assigned to him, even when they are technically challenging or first-of-their-kind within the organization. Suresh enthusiastically embraces new challenges, navigates ambiguous requirements effectively, and ensures high-quality deliverables. Whenever he faces roadblocks, he reaches out for clarification or guidance, which reflects his commitment to accuracy and continuous learning. He actively participates in team discussions, contributes valuable insights, and brings integrity, diligence, and a collaborative spirit to every project. Suresh is not only hardworking but also a reliable and valuable addition to any software development team.",
+      "name": "Aman Budhraja",
+      "role": "Project Manager",
+      "company": "Sumeru Software Solutions",
+      "image": "/testimonials/aman.jpeg"
+    },
+    {
+      "id": 2,
+      "quote": "Suresh consistently demonstrates a strong commitment to understanding and executing the tasks assigned to him. During his tenure, he handled technically challenging assignments, often pioneering solutions in the organization. He approaches each task with enthusiasm and confidence, showing a clear trajectory of growth and adaptability. Incomplete or ambiguous technical requirements never hinder his progress; Suresh takes initiative to research, validate, and implement the right solutions. Whenever he encounters obstacles, he proactively seeks guidance and collaborates effectively, ensuring the delivery of high-quality, reliable results. He manages his time efficiently, delivering work that consistently meets or exceeds expectations. Suresh is an invaluable team member — actively contributing to discussions, bringing integrity and dedication to every project, and continuously striving for excellence. His strong technical acumen, coupled with a collaborative spirit, makes him a significant asset to any team.",
+      "name": "Arun Raj",
+      "role": "DevOps Lead",
+      "company": "Sumeru Software Solutions",
+      "image": "/testimonials/arunraj.png"
+    },
+    {
+      "id": 3,
+      "quote": "During his tenure as a full-time developer, I witnessed Suresh's strengths. He is good at research and documentation, possesses strong communication skills, and never hesitates to share his suggestions. He has the patience to work on the minute details of any project. It was a great experience working with a teammate like him.",
+      "name": "Neeru Chaurasia",
+      "role": "Project Manager",
+      "company": "Sumeru Software Solutions",
+      "image": "/testimonials/neeru.png"
     }
   ]
 }

@@ -2,16 +2,30 @@ import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import { z } from 'zod';
 
-let cachedTransporter: nodemailer.Transporter | null = null;
-
 function getTransporter(user: string, pass: string) {
-  if (!cachedTransporter) {
-    cachedTransporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: { user, pass },
-    });
+  const cleanUser = user.trim();
+  const cleanPass = pass.replace(/\s/g, '');
+
+  return nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
+    requireTLS: true,
+    auth: { user: cleanUser, pass: cleanPass },
+  });
+}
+
+function getEmailErrorMessage(error: unknown) {
+  if (
+    typeof error === 'object' &&
+    error !== null &&
+    'code' in error &&
+    error.code === 'EAUTH'
+  ) {
+    return 'Gmail login failed. Create a new App Password in Google Account settings and update .env.local, then restart the dev server.';
   }
-  return cachedTransporter;
+
+  return 'Failed to send email';
 }
 
 const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
@@ -141,6 +155,7 @@ export async function POST(request: NextRequest) {
     }
 
     const transporter = getTransporter(emailUser, emailPassword);
+    await transporter.verify();
 
     const safeName = escapeHtml(data.name);
     const safeEmail = escapeHtml(data.email);
@@ -183,7 +198,7 @@ export async function POST(request: NextRequest) {
 
     console.error('Contact form error:', error);
     return NextResponse.json(
-      { success: false, error: 'Failed to send email' },
+      { success: false, error: getEmailErrorMessage(error) },
       { status: 500 }
     );
   }

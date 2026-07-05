@@ -208,3 +208,37 @@
     text-wrap: balance;
   }
 }
+
+@keyframes testimonials-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.testimonials-track {
+  animation: testimonials-marquee 55s linear infinite;
+  will-change: transform;
+}
+
+.testimonials-marquee:hover .testimonials-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonials-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    row-gap: 1.5rem;
+  }
+
+  .testimonials-marquee {
+    left: 0;
+    width: 100%;
+    transform: none;
+  }
+}

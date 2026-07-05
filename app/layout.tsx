@@ -51,13 +51,13 @@ export const metadata: Metadata = {
     title: 'Suresh Balla - Software Engineer',
     description: 'Software engineer building scalable web platforms, admin systems, and payment-enabled products.',
     type: 'website',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Suresh Balla - Software Engineer',
     description: 'Software engineer building scalable web platforms, admin systems, and payment-enabled products.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
   icons: {
     icon: '/favicon-64.png',

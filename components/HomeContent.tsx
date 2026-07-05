@@ -4,6 +4,7 @@ import { About } from '@/components/sections/About';
 import { Skills } from '@/components/sections/Skills';
 import { Experience } from '@/components/sections/Experience';
 import { Projects } from '@/components/sections/Projects';
+import { Testimonials } from '@/components/sections/Testimonials';
 import { Contact } from '@/components/sections/Contact';
 import portfolioData from '@/data/portfolio.json';
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
@@ -20,6 +21,7 @@ const SECTION_COMPONENTS: Record<string, React.ComponentType<{ config: SectionCo
   skills: Skills,
   experience: Experience,
   projects: Projects,
+  testimonials: Testimonials,
   contact: Contact,
 };
 
@@ -47,7 +49,7 @@ export default function HomeContent() {
         })}
       </div>
 
-      <footer className="border-t border-border bg-card/60 px-4 py-8 text-sm text-muted-foreground sm:px-6 lg:px-8">
+      <footer className="border-t border-border/70 bg-card/45 px-4 py-8 text-sm text-muted-foreground sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-6xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="font-semibold text-foreground">&copy; {new Date().getFullYear()} {profile.name}</p>

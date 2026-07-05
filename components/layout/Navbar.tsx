@@ -14,6 +14,7 @@ const sectionLabels: Record<string, string> = {
   skills: 'Expertise',
   experience: 'Experience',
   projects: 'Work',
+  testimonials: 'Testimonials',
   contact: 'Contact',
 };
 
