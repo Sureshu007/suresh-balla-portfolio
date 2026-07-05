@@ -1,0 +1,129 @@
+{
+  "profile": {
+    "name": "Suresh Balla",
+    "role": "Full Stack Developer",
+    "location": "Bengaluru, India",
+    "email": "sureshballa007@gmail.com",
+    "phone": "+91 9959702066",
+    "objective": "full stack developer with 2+ years of experience building scalable web applications, admin systems, payment workflows, and polished user interfaces.",
+    "socials": {
+      "github": "https://github.com/Sureshu007",
+      "linkedin": "https://www.linkedin.com/in/suresh-balla1312/",
+      "twitter": "https://x.com/Soorajkolkata"
+    },
+    "currentFocus": "Shipping reliable web products for global teams.",
+    "availability": "Available for selected product work"
+  },
+  "about": {
+    "stats": [
+      { "label": "Experience", "value": "2+ Years" },
+      { "label": "Projects", "value": "10+" },
+      { "label": "Users Impacted", "value": "1M+" },
+      { "label": "Countries", "value": "140+" }
+    ]
+  },
+  "sections": [
+    { "id": "hero", "type": "hero", "config": { "title": "Suresh Balla", "subtitle": "Software Engineer", "tagline": "Software engineer building scalable web platforms.", "intro": "I design and engineer dependable product experiences across admin systems, payment flows, localization platforms, and Supabase-backed applications." } },
+    { "id": "about", "type": "about", "config": { "title": "About Me" } },
+    { "id": "skills", "type": "skills", "config": { "title": "Technical Expertise" } },
+    { "id": "experience", "type": "experience", "config": { "title": "Experience" } },
+    { "id": "projects", "type": "projects", "config": { "title": "Featured Projects" } },
+    { "id": "contact", "type": "contact", "config": { "title": "Get in Touch" } }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": ["ReactJS", "NextJS", "Refine", "Tailwind CSS", "Shadcn UI", "Zustand"]
+    },
+    {
+      "category": "Backend",
+      "items": ["NestJS", "ExpressJS", "NodeJS", "Supabase", "PostgreSQL"]
+    },
+    {
+      "category": "Languages",
+      "items": ["TypeScript", "JavaScript", "Python", "Java"]
+    },
+    {
+      "category": "Payment Integrations",
+      "items": ["Stripe", "PayPal", "CorvusPay", "GoldenPay", "Tap2Pay"]
+    },
+    {
+      "category": "Auth",
+      "items": ["Keycloak", "Supabase Auth", "Google OAuth"]
+    },
+    {
+      "category": "Gen AI",
+      "items": ["Claude", "Codex", "Cursor", "Github Copilot"]
+    },
+    {
+      "category": "Tools",
+      "items": ["Git", "BitBucket", "Slack", "JIRA", "Docker", "Figma", "Adobe XD"]
+    },
+    {
+      "category": "Soft Skills",
+      "items": ["Leadership", "Adaptability", "Decision-Making", "Team Management", "Critical Thinking"]
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "role": "Full Stack Developer",
+      "company": "Sumeru Software Solutions",
+      "location": "Bengaluru, IN",
+      "period": "Dec 2024 - Present",
+      "description": "Led a 15-member team to build and scale a global back-office app used by 15,000+ teachers and admins across 60+ countries.",
+      "achievements": [
+        "Focused on architecture, feature delivery, and performance optimization using Next.js (Refine), Shadcn UI, Zustand, NestJS, message queues, and microservices.",
+        "Developed configurable course registration pages enabling dynamic content and flow customization, supporting 100,000+ participant registrations.",
+        "Built a reusable payment gateway integration module used by multiple Art of Living projects.",
+        "Built an internal translation management system using Supabase and JS for 60+ countries and 50+ languages, reducing localization turnaround time.",
+        "Built a unified fundraising wrapper that dynamically integrates multiple campaigns using configurable data.",
+        "Collaborated in the rapid development of the Art of Living US website, delivering optimized Next.js components within 48 hours."
+      ]
+    },
+    {
+      "id": 2,
+      "role": "Software Developer",
+      "company": "Sumeru Software Solutions",
+      "location": "Bengaluru, IN",
+      "period": "Jan 2024 - Dec 2024",
+      "description": "Worked on the front-end of the Art of Living Latin America Backoffice application.",
+      "achievements": [
+        "Translated 600+ Figma screens into production using ReactJS.",
+        "Developed 15+ custom UI components that improved usability and ensured consistent UI/UX for over 5,000 active admin users."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Bhagyalakshmi Future Gold",
+      "type": "Commerce and mobile-ready product",
+      "tech": ["Next.js", "TypeScript", "React", "Supabase", "Razorpay", "Tailwind CSS", "Capacitor"],
+      "image": "/projects/bhagyalakshmi.webp",
+      "github": "https://github.com/Sureshu007/Bhagyalakshmi-Future-Gold",
+      "link": "https://bfg.darisi.in",
+      "description": "A full-stack bilingual (English & Telugu) jewelry e-commerce platform with product catalog, cart, wishlist, multi-step checkout with Razorpay payments, order tracking, admin dashboard with revenue analytics, and cross-platform mobile support via Capacitor. Features dual store modes (online e-commerce / offline catalog with WhatsApp)."
+    },
+    {
+      "id": 2,
+      "title": "DevMarket",
+      "type": "Two-sided marketplace",
+      "tech": ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "shadcn/ui"],
+      "image": "/projects/devmarket.webp",
+      "github": "https://github.com/ajaydarisi/market-place",
+      "link": "https://market-place-for-websites.vercel.app/",
+      "description": "A two-sided marketplace connecting clients with developers for freelance projects. Clients post projects with budgets and categories, developers browse and submit proposals, and both sides communicate through built-in messaging. Features role-based onboarding, real-time notifications, and Supabase-powered authentication."
+    },
+    {
+      "id": 3,
+      "title": "TexLedger",
+      "type": "Accounting and inventory platform",
+      "tech": ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS"],
+      "image": "/projects/texledger.webp",
+      "github": "https://github.com/ajaydarisi/Textile-Inventory-Manager",
+      "link": "https://textile-inventory-app.vercel.app/",
+      "description": "A Tally-like accounting and inventory management system for textile wholesalers. Features journal-based double-entry accounting with strict debit-credit validation, stock tracking via movement events, voucher management (purchase, sales, receipt, payment), and financial reports including trial balance and profit/loss. Uses PostgreSQL functions for accounting logic and Row Level Security for company-level data isolation."
+    }
+  ]
+}
