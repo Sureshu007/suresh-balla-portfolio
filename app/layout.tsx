@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { DM_Sans, Playfair_Display } from 'next/font/google';
 import { Providers } from '@/components/providers';
 import portfolioData from '@/data/portfolio.json';
+import { siteUrl } from '@/lib/site-url';
 import './globals.css';
 
 const { profile } = portfolioData;
@@ -12,7 +13,7 @@ const personJsonLd = {
   name: profile.name,
   jobTitle: profile.role,
   email: profile.email,
-  url: 'https://ajay.darisi.in',
+  url: siteUrl,
   address: {
     '@type': 'PostalAddress',
     addressLocality: profile.location,
@@ -44,7 +45,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ajay.darisi.in'),
+  metadataBase: new URL(siteUrl),
   title: 'Suresh Balla - Software Engineer',
   description: 'Professional portfolio of Suresh Balla, a software engineer building scalable web platforms, admin systems, and payment-enabled products.',
   openGraph: {
