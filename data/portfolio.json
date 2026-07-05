@@ -106,7 +106,7 @@
       "tech": ["Next.js", "TypeScript", "React", "Supabase", "Razorpay", "Tailwind CSS", "Capacitor"],
       "image": "/projects/bhagyalakshmi.webp",
       "github": "https://github.com/Sureshu007/Bhagyalakshmi-Future-Gold",
-      "link": "https://bfg.darisi.in",
+      "link": "https://bhagyalakshmi-future-gold.vercel.app",
       "description": "A full-stack bilingual (English & Telugu) jewelry e-commerce platform with product catalog, cart, wishlist, multi-step checkout with Razorpay payments, order tracking, admin dashboard with revenue analytics, and cross-platform mobile support via Capacitor. Features dual store modes (online e-commerce / offline catalog with WhatsApp)."
     },
     {
