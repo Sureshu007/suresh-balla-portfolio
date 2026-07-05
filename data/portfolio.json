@@ -54,7 +54,7 @@
     },
     {
       "category": "Gen AI",
-      "items": ["Claude", "Codex", "Cursor", "Github Copilot"]
+      "items": ["Claude", "Codex", "Github Copilot"]
     },
     {
       "category": "Tools",
